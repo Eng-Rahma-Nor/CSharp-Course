@@ -1,4 +1,4 @@
-﻿# C# Programming Course
+# C# Programming Course
 
 A structured repository for my **C# Programming Course**, documenting my learning journey from the fundamentals of C# programming to database programming and desktop application development.
 
