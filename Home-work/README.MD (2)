@@ -1,0 +1,74 @@
+﻿C# Windows Forms Booking & Registration Management Systems
+
+A collection of interactive C# Windows Forms Desktop Applications designed to handle complex business logic, input validations, conditional eligibility, and automated fee/cost calculations for hospitality, travel, vehicle rental, and academic registration domain models.
+
+🌟 Key Features & Included Modules
+
+This suite contains four core management applications built using C# and .NET Windows Forms:
+
+1. 🏨 Hotel Room Booking System
+
+Input Validation: Enforces strict constraints on guest age (18–90), stay duration (1–30 nights), and occupancy thresholds per room tier (Standard: max 2, Deluxe: max 4, Suite: max 6).
+
+Dynamic Pricing: Calculates base rates via switch control structures ($50–$130/night).
+
+Custom Adjustments: Applies progressive multi-night stay discounts (5%–12%), per-guest breakfast add-ons, large group surcharges (>4 guests), and senior citizen discounts (age 60+).
+
+2. ✈️ Airline Ticket Booking System
+
+Eligibility Validation: Enforces baggage limits (max 50kg) and restricts passengers under 12 from booking First Class seats.
+
+Fare & Discount Structure: Supports Multi-ticket group discounts (5%–10%), child fare reductions (20%), senior discounts (10%), travel insurance add-ons ($25/ticket), and extra baggage weight calculations.
+
+3. 🚗 Vehicle Rental Management System
+
+Driver Eligibility: Verifies age thresholds (21+ for standard vehicles, 25+ for Luxury) and minimum driving experience constraints.
+
+Cost Calculations: Integrates daily rental rates ($35–$100/day), duration discounts (7+ days), optional collision/daily insurance ($15/day), and young-driver surcharges (ages 21–24).
+
+4. 🎓 University Course Registration Fee System
+
+Course & Level Pricing: Computes tuition fees based on academic year levels ($40–$55 per course unit) across 1 to 8 enrolled courses.
+
+Services & Bundle Discounts: Integrates accommodation ($120) and transport ($50) fees with conditional bundle discounts for high-volume course enrollments.
+
+🛠️ Technical Concepts & Architecture
+
+UI/UX Containers: Standardized layout design utilizing GroupBox, ListBox, DateTimePicker, NumericUpDown, RadioButton, and CheckBox controls for organized user data entry.
+
+Safe Parsing & Input Validation: Built-in safe data parsing using int.TryParse() and double.TryParse() to prevent runtime exceptions from malformed inputs.
+
+Control Flow: Nested if-else conditional branches, switch blocks, and boolean flags to govern application approval workflows.
+
+Output Formatting: Clean representation of computed summaries and financial figures using currency string formats (:C / ToString()).
+
+🚀 Getting Started
+
+Prerequisites
+
+Visual Studio 2022 (or Visual Studio 2019) with the .NET Desktop Development workload installed.
+
+.NET Framework / .NET Core Runtime.
+
+Running the Application
+
+Clone the repository:
+
+git clone https://github.com/Eng-Rahma-Nor/CSharp-Course.git
+
+
+Open AssignmentOne.sln or firstassign.csproj in Visual Studio.
+
+Build the solution (Ctrl + Shift + B).
+
+Press F5 or click Start to run the application.
+
+📋 Control Conventions
+
+txt... : TextBox inputs (e.g., txtGuestName, txtAge)
+
+rdo... : RadioButtons for mutually exclusive options (e.g., rdoEconomy, rdoSUV)
+
+chk... : CheckBoxes for optional features (e.g., chkInsurance)
+
+lst... / lbl... : Output targets for summary views (e.g., lstResults)
